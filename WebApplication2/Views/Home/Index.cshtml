@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<p>
+    @ViewData["message"]
+</p>
+<p>
+    @ViewData["Name"]
+</p>
+<p>
+    @ViewData["per"]
+</p>
+<p>
+   <ul>
+        @foreach (string item in (IEnumerable<string>)ViewData["colors"]) 
+        {
+            <li>
+                @item
+            </li>
+        }
+   </ul>
+</p>
+<p>
+    @ViewBag.Username
+</p>
+<p>
+    @ViewBag.City
+</p>
+<p>
+    <ol>
+        @foreach (string item in ViewBag.colors)
+        {
+            <li>
+                @item
+            </li>
+        }
+    </ol>
+</p>
+<p>
+    <ol>
+    @foreach (KeyValuePair<String,int> item in ViewBag.colours)
+        {
+            <li>
+                @item
+            </li>
+        }
+    </ol>
+</p>

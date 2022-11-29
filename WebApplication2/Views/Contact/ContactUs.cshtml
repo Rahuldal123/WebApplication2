@@ -1,0 +1,33 @@
+﻿@using(Html.BeginForm()){
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-xm-12">
+				<br/>
+				<div class="mb-3">
+					<h4>Ask Question ?</h4>
+				</div>
+				<div class="mb-3">
+					<lebel class="form-label"> Full Name</lebel>
+                @Html.TextBox("fname")
+				</div>
+				<div class="mb-3">
+					<lebel class="form-lebel">Email</lebel>
+                @Html.TextBox("email")
+				</div>
+					<div class="mb-3">
+					<lebel class="form-lebel">Contact No</lebel>
+                @Html.TextBox("cono")
+				</div>
+					<div class="mb-3">
+					<lebel class="form-lebel">Message</lebel>
+                @Html.TextArea("message")
+				</div class="mb-3"> 
+				 <input type="submit" class="btn btn-outline-primary"/>
+				<div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+}
